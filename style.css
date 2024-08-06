@@ -1,0 +1,53 @@
+@font-face {
+    font-family:"ace";
+    src: url(dafont.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 30px;
+}
+.card {
+  height: 350px;
+  width: 200px;
+  border: 3px solid black;
+  border-radius: 12px;
+  position: relative;
+  /* background-color: greenyellow; */
+  /* background-color: rgba(0, 255, 255,.2); */
+  /* background-color: #eaeaea; */
+  background-image: linear-gradient(to bottom right,#eaeaea,#fb0808);
+  font-family: "ace";
+  transition: all 1s;
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: -10px 10px ;
+}
+.text-center,
+.top-left,
+.bottom-right{
+position: absolute;
+font-size: 30px;
+}
+.bottom-right{
+    bottom: 10px;
+    right: 10px;
+    color: blue;
+}
+.top-left{
+    color: #4a5468;
+    top: 10px;
+    left: 10px;
+}
+.text-center {
+    color: rgb(10, 33, 163);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
